@@ -1,9 +1,9 @@
 {
-  "name": "python",
+  "name": "frython",
   "displayName": "%displayName%",
   "description": "%description%",
   "version": "1.0.0",
-  "publisher": "vscode",
+  "publisher": "magiclemp",
   "license": "MIT",
   "engines": {
     "vscode": "*"
@@ -11,38 +11,30 @@
   "contributes": {
     "languages": [
       {
-        "id": "python",
+        "id": "frython",
         "extensions": [
-          ".py",
-          ".rpy",
-          ".pyw",
-          ".cpy",
-          ".gyp",
-          ".gypi",
-          ".pyi",
-          ".ipy",
-          ".pyt"
+          ".fry"
         ],
         "aliases": [
-          "Python",
-          "py"
+          "Frython",
+          "fry"
         ],
         "filenames": [
           "SConstruct",
           "SConscript"
         ],
-        "firstLine": "^#!\\s*/?.*\\bpython[0-9.-]*\\b",
+        "firstLine": "^#!\\s*/?.*\\bfrython[0-9.-]*\\b",
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "python",
-        "scopeName": "source.python",
+        "language": "frython",
+        "scopeName": "source.frython",
         "path": "./syntaxes/MagicPython.tmLanguage.json"
       },
       {
-        "scopeName": "source.regexp.python",
+        "scopeName": "source.regexp.frython",
         "path": "./syntaxes/MagicRegExp.tmLanguage.json"
       }
     ],
@@ -57,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/vscode.git"
+    "url": "https://github.com/magiclemp/frython_vscode_extension.git"
   }
 }

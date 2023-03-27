@@ -1,0 +1,93 @@
+depuis banane importe *
+
+classe Singe:
+	# Bananes que le singe peut manger.
+	capacite = 10
+	definis mange(soi, N):
+		'''Faire que le singe mange N bananes!'''
+		capacite = capacite - N*banane.size
+
+	definis frenesie_alimentaire(soi):
+		mange(9.25)
+		retourne "Yum yum"
+
+	definis une_fonction(a:
+					lambda x=Rien:
+					{cle: val
+						pour cle, val dans
+							(x si x est pas Rien sinon [])
+					}=42):
+		passe
+
+passe
+
+definis premiern(g, n):
+	pour _ dans intervalle(n):
+		rends g.next()
+
+reduce(lambda x,y: x+y, [47,11,42,13])
+woerter = {"house" : "Haus", "cat":"Katze", "black":"schwarz"}
+
+mondictionnaire = {
+    'foo': 23, #comment
+    'bar': "salut" #sqadsad
+}
+
+definis steuern(einkommen):
+	"""Berechnung der zu zahlenden Steuern fuer ein zu versteuerndes Einkommen von x"""
+	si einkommen <= 8004:
+		retourne 0
+	sinsi einkommen <= 13469:
+		y = (einkommen -8004.0)/10000.0
+		retourne (912.17 * y + 1400)*y
+	sinon:
+		retourne einkommen * 0.44 - 15694
+
+definis beliebig(x, y, *mehr):
+    affiche "x=", x, ", x=", y
+    affiche "mehr: ", mehr
+
+classe Memoize:
+    definis __init__(soi, fn):
+        soi.fn = fn
+        soi.memo = {}
+    definis __call__(soi, *args):
+        si args pas dans soi.memo:
+                soi.memo[args] = soi.fn(*args)
+        retourne soi.memo[args]
+
+res = re.search(r"([0-9-]*)\s*([A-Za-z]+),\s+(.*)", i)
+
+tantque True:
+    essaie:
+        n = raw_input("Number: ")
+        n = int(n)
+        casse
+    sauf ValueError:
+        affiche("Not a number")
+
+async avec EXPR comme VAR:
+    BLOCK
+
+# Comments in dictionary items should be colorized accordingly
+mon_dictionnaire = {
+    'foo':23, # this should be colorized as comment
+    'bar':"foobar" #this should be colorized as comment
+}
+
+# test raw strings
+texte = r"""
+intervalle ``[1,2)`` leads to
+"""
+highlight_error = True
+
+# highlight doctests
+r'''Module docstring
+
+    Some text followed by code sample:
+    >>> pour a dans foo(2, b=1,
+    ...                 c=3):
+    ...   affiche(a)
+    0
+    1
+'''
